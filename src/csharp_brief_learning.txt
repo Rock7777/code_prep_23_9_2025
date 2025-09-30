@@ -1,0 +1,119 @@
+c sharp leARNING very brief
+
+C# (C-Sharp) is a programming language developed by Microsoft that runs on the .NET Framework.
+
+C# is used to develop web apps, desktop apps, mobile apps, games and much more.
+
+basic program
+
+using System;
+
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine(" World!");    
+    }
+  }
+}
+
+The first version of Csharp was released in year 2002. The latest version, C# 13, was released in November 2024.
+
+C# is case-sensitive; MyClass and myclass have different meaning
+
+Comments are indicated the normal way - // in C sharp also
+
+Console.ReadLine() is the method used to get input from user
+
+if system is expecting integer and u input text , then we get System.FormatException
+
+lets resume from C# Operators
+
+String interpolation was introduced in C#6
+
+example of interpolation in C# : 
+string v1 = "Rock"
+Console.WriteLine($"My name is {v1}")
+
+Output: My name is Rock
+
+bool is the keyword used to declare boolean datatype in C#
+
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+foreach (string i in cars) 
+{
+  Console.WriteLine(i);
+}
+
+To sort , we use Sort() method in C#
+
+int[] myNumbers = {5, 1, 8, 9};
+Array.Sort(myNumbers);
+foreach(int i in myNumbers)
+{
+  Console.WriteLine(i);
+}
+
+In C#, it is good practice to start with an uppercase letter when naming methods, as it makes the code easier to read.
+
+eg. of method call in C#
+
+static void MyMethod() 
+{
+  Console.WriteLine("I just got executed!");
+}
+
+static void Main(string[] args)
+{
+  
+MyMethod();
+
+}
+
+if we don't specify the access modifier it will be treated as private by default
+
+Inheritance in C# --> class Car : Vehicle
+
+What does the sealed keyword do when used with a class? --> It prevents the class from being inherited.
+
+
+for the derived classes to override animalSound method we have to use virtual keyword like below
+
+class Animal
+{
+  public virtual void animalSound()
+  {
+    Console.WriteLine("The animal makes a sound");
+  }
+}
+
+and then in derived class we use keyword override in animalSound method declaration
+
+to achieve abstraction in C# , we have interfaces and abstract classes
+
+What is an interface in C#?
+
+A completely abstract class that can only contain abstract methods and properties.
+
+what is Enum in C#?
+A special 'class' that represents a group of constants.
+
+Hello World code exAMple -
+
+using System;
+
+namespace H
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");    
+    }
+  }
+}
+
+The value of a string variable cannot be surrounded by single quotes in C#
+
